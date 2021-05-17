@@ -8,8 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "lint:prettier": "prettier --write src/**/*.{ts,tsx}",
-    "lint:tslint": "tslint --fix src/**/*.{tsx}",
-    "lint:all": "yarn lint:tslint && yarn lint:prettier",
+    "lint:eslint": "eslint --fix --ext .ts,.tsx 'src/'",
+    "lint:all": "yarn lint:eslint && yarn lint:prettier",
     "postinstall": "cd ios && pod install && cd ../"
   },
   "dependencies": {
